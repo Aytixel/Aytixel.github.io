@@ -1,0 +1,150 @@
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "MozillaText";
+
+    background-color: #f9fcf9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "MozillaHeadline";
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.hover-h-wgh:hover {
+    font-variation-settings: "wght" 400;
+}
+
+.hover-t-wgh:hover,
+.focus-visible-t-wgh:focus-visible {
+    font-variation-settings: "wght" 700;
+}
+
+.text-bg {
+    display: inline-block;
+
+    padding: 0.3rem 1rem;
+
+    background-color: color-mix(in srgb, #f9fcf9, #0000 15%);
+
+    color: #000;
+
+    backdrop-filter: blur(1em);
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+
+    translate: 0 0.15em;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100dvw;
+    height: 100dvh;
+
+    & > div {
+        padding: 3em;
+    }
+
+    &::before {
+        display: block;
+
+        position: absolute;
+
+        content: "";
+
+        --image-offset: -69dvw;
+
+        width: 100dvw;
+        height: calc(151dvw + var(--image-offset));
+        max-height: 100dvh;
+
+        background-image: url("/img/anthony-reungere-wBgqxZ5CtYQ-unsplash.jpg");
+        background-size: 100%;
+        background-position: 0 var(--image-offset);
+        mask-image: linear-gradient(
+            178deg,
+            rgba(0, 0, 0, 1) 93%,
+            transparent 93.2%
+        );
+    }
+}
+
+#title {
+    & .text-bg {
+        padding: 0.3rem 1.5rem;
+    }
+}
+
+#external-links {
+    & ul {
+        list-style: none;
+    }
+}
+
+#internal-links {
+    position: sticky;
+
+    --top-offset: 16.2em;
+
+    top: calc(100dvh - var(--top-offset) + 3em);
+
+    z-index: 1;
+
+    & div {
+        display: flex;
+
+        flex-direction: column;
+        align-items: end;
+
+        position: absolute;
+        top: calc(-100dvh + var(--top-offset));
+        right: 3em;
+
+        width: fit-content;
+
+        & ul {
+            display: grid;
+
+            justify-items: right;
+
+            list-style: none;
+        }
+    }
+}
+
+main {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+footer {
+    width: 100dvw;
+    height: 10em;
+}

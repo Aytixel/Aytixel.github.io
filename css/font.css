@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "MozillaHeadline";
+    src: url("/font/MozillaHeadline[wdth,wght].ttf")
+        format("truetype-variations");
+}
+
+@font-face {
+    font-family: "MozillaText";
+    src: url("/font/MozillaText[wght].ttf") format("truetype-variations");
+}
