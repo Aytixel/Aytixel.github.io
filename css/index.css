@@ -10,6 +10,8 @@ html {
 }
 
 body {
+    display: grid;
+
     font-family: "MozillaText";
 
     background-color: #f9fcf9;
@@ -64,12 +66,18 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 header {
     width: 100dvw;
     height: 100dvh;
 
     & > div {
         padding: 3em;
+
+        max-width: 23em;
     }
 
     &::before {
@@ -88,11 +96,14 @@ header {
         background-image: url("/img/anthony-reungere-wBgqxZ5CtYQ-unsplash.jpg");
         background-size: 100%;
         background-position: 0 var(--image-offset);
+
         mask-image: linear-gradient(
             178deg,
             rgba(0, 0, 0, 1) 93%,
             transparent 93.2%
         );
+
+        filter: blur(1px);
     }
 }
 
@@ -102,13 +113,9 @@ header {
     }
 }
 
-#external-links {
-    & ul {
-        list-style: none;
-    }
-}
-
 #internal-links {
+    grid-row: 2;
+
     position: sticky;
 
     --top-offset: 16.2em;
@@ -127,14 +134,10 @@ header {
         top: calc(-100dvh + var(--top-offset));
         right: 3em;
 
-        width: fit-content;
-
         & ul {
             display: grid;
 
             justify-items: right;
-
-            list-style: none;
         }
     }
 }

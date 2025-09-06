@@ -17,8 +17,52 @@
             type="text/css"
             href="/css/index.css"
         />
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/fr.js"></script>
+        <script src="https://unpkg.com/dayjs/plugin/duration.js"></script>
+        <script
+            src="/script/index.js"
+            type="application/javascript"
+            async
+            defer
+        ></script>
     </head>
     <body>
+        <div id="internal-links">
+            <div>
+                <h3 id="internal-links-title">
+                    <span class="text-bg">Menu</span>
+                </h3>
+                <nav aria-labelledby="internal-links-title">
+                    <ul>
+                        <li>
+                            <a
+                                class="text-bg hover-t-wgh focus-visible-t-wgh"
+                                href="#profile"
+                            >
+                                Profil
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="text-bg hover-t-wgh focus-visible-t-wgh"
+                                href="#external-links"
+                            >
+                                Liens Externes
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="text-bg hover-t-wgh focus-visible-t-wgh"
+                                href="#contacts"
+                            >
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <header>
             <div id="title">
                 <h1>
@@ -27,6 +71,59 @@
                 <h2>
                     <span class="text-bg hover-h-wgh">Aytixel</span>
                 </h2>
+            </div>
+            <div id="profile">
+                <h3>
+                    <span class="text-bg">Profil</span>
+                </h3>
+                <br />
+                <ul>
+                    <li>
+                        <span class="text-bg">
+                            <b>Entreprise :</b> Alphalink
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text-bg">
+                            <b>Depuis :</b>
+                            <span data-time-since="2024-07-29"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text-bg">
+                            <b>Poste :</b> Développeur/Intégrateur R&D Data
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text-bg">
+                            <b>Lieu de résidence :</b> Pornic 44210
+                        </span>
+                    </li>
+                    <li>
+                        <br />
+                    </li>
+                    <li>
+                        <span class="text-bg">
+                            <b>Expérience pro :</b>
+                            <span data-time-since="2024-07-29"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text-bg">
+                            <b>Expérience perso :</b>
+                            <span data-time-since="2018"></span>
+                        </span>
+                    </li>
+                    <li>
+                        <br />
+                    </li>
+                    <li>
+                        <span class="text-bg">
+                            <b>Formation :</b> Licence Informatique (Le Mans
+                            Université)
+                        </span>
+                    </li>
+                </ul>
             </div>
             <div id="external-links">
                 <h3 id="external-links-title">
@@ -74,33 +171,6 @@
                 </nav>
             </div>
         </header>
-        <div id="internal-links">
-            <div>
-                <h3 id="internal-links-title">
-                    <span class="text-bg">Menu</span>
-                </h3>
-                <nav aria-labelledby="internal-links-title">
-                    <ul>
-                        <li>
-                            <a
-                                class="text-bg hover-t-wgh focus-visible-t-wgh"
-                                href="#external-links"
-                            >
-                                Liens Externes
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                class="text-bg hover-t-wgh focus-visible-t-wgh"
-                                href="#contacts"
-                            >
-                                Contacts
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
         <main></main>
         <footer>
             <div id="contacts"></div>
