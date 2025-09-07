@@ -34,45 +34,20 @@
                     <span class="text-bg">Menu</span>
                 </h3>
                 <nav aria-labelledby="internal-links-title">
-                    <ul>
-                        <li>
-                            <a
-                                class="text-bg hover-t-wgh focus-visible-t-wgh"
-                                href="#profile"
-                            >
-                                Profil
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                class="text-bg hover-t-wgh focus-visible-t-wgh"
-                                href="#external-links"
-                            >
-                                Liens Externes
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                class="text-bg hover-t-wgh focus-visible-t-wgh"
-                                href="#contacts"
-                            >
-                                Contacts
-                            </a>
-                        </li>
-                    </ul>
+                    <ul></ul>
                 </nav>
             </div>
         </div>
         <header>
-            <div id="title">
+            <section id="title">
                 <h1>
                     <span class="text-bg hover-h-wgh">Lucas Dureau</span>
                 </h1>
                 <h2>
                     <span class="text-bg hover-h-wgh">Aytixel</span>
                 </h2>
-            </div>
-            <div id="profile">
+            </section>
+            <section id="profile" data-link="Profil">
                 <h3>
                     <span class="text-bg">Profil</span>
                 </h3>
@@ -86,7 +61,7 @@
                     <li>
                         <span class="text-bg">
                             <b>Depuis :</b>
-                            <span data-time-since="2024-07-29"></span>
+                            <span data-time-from="2024-07-29"></span>
                         </span>
                     </li>
                     <li>
@@ -105,27 +80,18 @@
                     <li>
                         <span class="text-bg">
                             <b>Expérience pro :</b>
-                            <span data-time-since="2024-07-29"></span>
+                            <span data-time-from="2024-07-29"></span>
                         </span>
                     </li>
                     <li>
                         <span class="text-bg">
                             <b>Expérience perso :</b>
-                            <span data-time-since="2018"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <br />
-                    </li>
-                    <li>
-                        <span class="text-bg">
-                            <b>Formation :</b> Licence Informatique (Le Mans
-                            Université)
+                            <span data-time-from="2018"></span>
                         </span>
                     </li>
                 </ul>
-            </div>
-            <div id="external-links">
+            </section>
+            <section id="external-links" data-link="Liens Externes">
                 <h3 id="external-links-title">
                     <span class="text-bg">Liens Externes</span>
                 </h3>
@@ -169,11 +135,23 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </section>
         </header>
-        <main></main>
+        <main>
+            <section id="experience" data-link="Expérience">
+                <h2>Expérience</h2>
+            </section>
+            <section id="formation" data-link="Formation">
+                <h2>Formation</h2>
+            </section>
+            <section id="projects" data-link="Projets">
+                <h2>Projets</h2>
+            </section>
+        </main>
         <footer>
-            <div id="contacts"></div>
+            <section id="contacts" data-link="Contacts">
+                <h2>Contacts</h2>
+            </section>
         </footer>
     </body>
 </html>

@@ -10,8 +10,6 @@ html {
 }
 
 body {
-    display: grid;
-
     font-family: "MozillaText";
 
     background-color: #f9fcf9;
@@ -48,11 +46,11 @@ h2 {
 
     padding: 0.3rem 1rem;
 
-    background-color: color-mix(in srgb, #f9fcf9, #0000 15%);
+    background-color: color-mix(in srgb, #f9fcf9, #0000 40%);
 
     color: #000;
 
-    backdrop-filter: blur(1em);
+    backdrop-filter: blur(0.5em) brightness(200%) saturate(200%);
 }
 
 .icon {
@@ -70,13 +68,16 @@ ul {
     list-style: none;
 }
 
+section {
+    padding: 3em;
+}
+
 header {
-    width: 100dvw;
+    width: 100%;
     height: 100dvh;
+    min-height: 55em;
 
-    & > div {
-        padding: 3em;
-
+    & section {
         max-width: 23em;
     }
 
@@ -89,13 +90,14 @@ header {
 
         --image-offset: -69dvw;
 
-        width: 100dvw;
-        height: calc(151dvw + var(--image-offset));
-        max-height: 100dvh;
+        width: 100%;
+        /*height: calc(151dvw + var(--image-offset));*/
+        height: 100%;
 
         background-image: url("/img/anthony-reungere-wBgqxZ5CtYQ-unsplash.jpg");
-        background-size: 100%;
-        background-position: 0 var(--image-offset);
+        background-size: cover;
+        /*background-position: 0 var(--image-offset);*/
+        background-position: 50% 60%;
 
         mask-image: linear-gradient(
             178deg,
@@ -114,13 +116,11 @@ header {
 }
 
 #internal-links {
-    grid-row: 2;
-
     position: sticky;
 
     --top-offset: 16.2em;
 
-    top: calc(100dvh - var(--top-offset) + 3em);
+    top: calc(-1 * var(--top-offset) + 3em);
 
     z-index: 1;
 
@@ -131,7 +131,7 @@ header {
         align-items: end;
 
         position: absolute;
-        top: calc(-100dvh + var(--top-offset));
+        top: calc(var(--top-offset));
         right: 3em;
 
         & ul {
@@ -143,11 +143,9 @@ header {
 }
 
 main {
-    width: 100dvw;
-    height: 100dvh;
+    width: 100%;
 }
 
 footer {
-    width: 100dvw;
-    height: 10em;
+    width: 100%;
 }
